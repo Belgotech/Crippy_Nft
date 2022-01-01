@@ -19,5 +19,11 @@ contract CrippyNft is ERC721, ownable {
     totalSupply = 0;
     maxSupply = 1000;
     maxPerWallet = 3;
+    // set withdrawWallet address
     }  
+
+    
+functiion setIsPublicMintEnable(bool isPublicMintEnabled_) external onlyOwner{
+    
+}
 }
