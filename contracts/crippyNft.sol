@@ -23,7 +23,10 @@ contract CrippyNft is ERC721, ownable {
     }  
 
     
-functiion setIsPublicMintEnable(bool isPublicMintEnabled_) external onlyOwner{
+    functiion setIsPublicMintEnable(bool isPublicMintEnabled_) external onlyOwner{
+        isPublicMintEnabled = isPublicMintEnabled_; 
+    }
+
     
-}
+functiion setBasetokenUri(string calldata basetokenUri_)
 }
