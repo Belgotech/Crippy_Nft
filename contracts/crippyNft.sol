@@ -28,5 +28,11 @@ contract CrippyNft is ERC721, ownable {
     }
 
     
-functiion setBasetokenUri(string calldata basetokenUri_)
+    functiion setBasetokenUri(string calldata basetokenUri_) external onlyOwner {
+        basetokenUri = basetokenUri_; 
+    }
+
+    functiion tokenURI(unit256 tokenId_) public view override returns (string memory) {
+require(_exists(tokenId_), 'token does not exists');
+    }
 }
